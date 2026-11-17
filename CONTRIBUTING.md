@@ -50,6 +50,8 @@ Use English for UI text and public documentation. For node and geometry changes,
 
 ## Acknowledgments
 
+**OpenAI Codex**, an AI coding agent, implemented NoodleS under Marlena Moszko's direction. [Project credits](README.md#credits)
+
 - **Johnny Chan and the NodeGraphQt contributors** built the graph editor that NoodleS uses for its canvas, nodes, ports, and connections. [NodeGraphQt](https://github.com/jchanvfx/NodeGraphQt)
 - **Marcus Ottosson and the Qt.py contributors** maintain the Qt binding compatibility layer. The **Qt for Python team** provides PySide6 and Shiboken. **Chad Dombrova and the types-PySide6 contributors** develop the type stubs installed by Qt.py. [Qt.py](https://github.com/mottosso/Qt.py/blob/master/LICENSE) · [Qt for Python](https://pypi.org/project/PySide6/) · [types-PySide6](https://pypi.org/project/types-PySide6/)
 - **Chisomo Banzi and the Serpentine3D contributors** built the CAD application that hosts NoodleSBridge. NoodleS adapts Serpentine3D viewport code, and CAD View reuses its native tessellation and surface isocurve routines. [Serpentine3D](https://github.com/chisomobanzi/Serpentine3D) · [Third-party notices](THIRD_PARTY_NOTICES.md#serpentine3d)
