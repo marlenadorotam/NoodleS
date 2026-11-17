@@ -16,7 +16,9 @@ To uninstall, close both apps after saving your work and run **Uninstall NoodleS
 
 ## Try a graph
 
-Start with an empty Serpentine3D document and open **First Graph** in NoodleS. **Grid Rectangle** positions 20 boxes. **Domain** and **Range** vary their heights from 6 to 44 mm, and **Box from Center** publishes the boxes as one CAD object. Select **Domain** and change its endpoints in **Properties** to reshape the result. [First Graph](examples/First%20Graph.noodles) · [Graph image](examples/First%20Graph.png)
+Start with an empty Serpentine3D document and open **First Graph** in NoodleS. **Grid Rectangle** positions 20 boxes. **Domain** and **Range** vary their heights from 6 to 44 mm, and **Box from Center** publishes the boxes as one CAD object. Select **Domain** and change its endpoints in **Properties** to reshape the result. [First Graph](examples/First%20Graph.noodles)
+
+[![First Graph showing Grid Rectangle, Domain, Range, and Box from Center](examples/First%20Graph.png)](examples/First%20Graph.png)
 
 Use **Library** or right-click the canvas and choose **Search Nodes…** to add nodes. The **Properties** panel shows parameters, input values, and output for the selected node. Hover over ports to see their full names. While the apps are connected, save the graph as `.noodles` and the CAD model as `.serp` in either order.
 
@@ -26,7 +28,9 @@ Use **Library** or right-click the canvas and choose **Search Nodes…** to add 
 
 This example maps a periodic Voronoi pattern onto a curved shell and thickens it into a single solid. The graph exposes controls for the mouth radius, pore count, pattern seed, opening size, and wall thickness.
 
-With NoodleSBridge installed, open the [Serpentine3D model](examples/radiolaria/Radiolaria.serp), then open the [matching NoodleS graph](examples/radiolaria/Radiolaria.noodles). Select **Crown Detail** in the model’s named views for a close-up of the tip. [Graph image](examples/radiolaria/Radiolaria%20Graph.png)
+With NoodleSBridge installed, open the [Serpentine3D model](examples/radiolaria/Radiolaria.serp), then open the [matching NoodleS graph](examples/radiolaria/Radiolaria.noodles). Select **Crown Detail** in the model’s named views for a close-up of the tip.
+
+[![Radiolaria node graph in NoodleS](examples/radiolaria/Radiolaria%20Graph.png)](examples/radiolaria/Radiolaria%20Graph.png)
 
 ### Gyroid
 
@@ -34,7 +38,9 @@ With NoodleSBridge installed, open the [Serpentine3D model](examples/radiolaria/
 
 This graph builds a cell of a gyroid from sampled points. **Surface from Points** creates the CAD patches, **Brep Join** stitches them together, and **Offset** gives the gyroid solid walls. Use **Cell Size**, **Twist**, and **Wall Thickness** to edit the result. The default wall thickness is 1.2 mm.
 
-Open the [Serpentine3D model](examples/gyroid/Gyroid%20CAD%20Solid.serp), then the [matching NoodleS graph](examples/gyroid/Gyroid%20CAD%20Solid.noodles). Keep the `data` folder beside the graph so **Read CSV** can find the samples. To see the smooth shaded view, set the Serpentine viewport to **Rendered**, run `surfaceedges` and choose **Off**, then enable **High Smooth** under **CAD View** in NoodleS. [Graph image](examples/gyroid/Gyroid%20CAD%20Solid%20Graph.png)
+Open the [Serpentine3D model](examples/gyroid/Gyroid%20CAD%20Solid.serp), then the [matching NoodleS graph](examples/gyroid/Gyroid%20CAD%20Solid.noodles). Keep the `data` folder beside the graph so **Read CSV** can find the samples. To see the smooth shaded view, set the Serpentine viewport to **Rendered**, run `surfaceedges` and choose **Off**, then enable **High Smooth** under **CAD View** in NoodleS.
+
+[![Gyroid node graph in NoodleS](examples/gyroid/Gyroid%20CAD%20Solid%20Graph.png)](examples/gyroid/Gyroid%20CAD%20Solid%20Graph.png)
 
 ### Schizophyllum commune
 
@@ -42,7 +48,9 @@ Open the [Serpentine3D model](examples/gyroid/Gyroid%20CAD%20Solid.serp), then t
 
 This study models the fan and split gills of *Schizophyllum commune* with parametric surfaces. Adjust **Cap Radius**, **Fan Spread**, **Gill Count**, and **Gill Relief** to change the proportions and folds.
 
-Open the [Serpentine3D model](examples/schizophyllum/Schizophyllum.serp), then the [matching NoodleS graph](examples/schizophyllum/Schizophyllum.noodles). The named views **Gill Detail** and **Base Detail** show the folds and how they meet at the base. [Graph image](examples/schizophyllum/Schizophyllum%20Graph.png)
+Open the [Serpentine3D model](examples/schizophyllum/Schizophyllum.serp), then the [matching NoodleS graph](examples/schizophyllum/Schizophyllum.noodles). The named views **Gill Detail** and **Base Detail** show the folds and how they meet at the base.
+
+[![Schizophyllum commune node graph in NoodleS](examples/schizophyllum/Schizophyllum%20Graph.png)](examples/schizophyllum/Schizophyllum%20Graph.png)
 
 ### Penrose Relief
 
@@ -50,7 +58,9 @@ Open the [Serpentine3D model](examples/schizophyllum/Schizophyllum.serp), then t
 
 The graph clips a **Penrose P2** tiling to a rectangle, shrinks each tile about its centre, and extrudes the tiles to heights along a wave. **Generations**, **Wave Height**, and **Tile Scale** control the pattern density, relief, and gaps.
 
-Open the [Serpentine3D model](examples/penrose-relief/Penrose%20Relief.serp), then the [matching NoodleS graph](examples/penrose-relief/Penrose%20Relief.noodles). Select **Penrose Relief** in Named Views for the preview angle. [Graph image](examples/penrose-relief/Penrose%20Relief%20Graph.png)
+Open the [Serpentine3D model](examples/penrose-relief/Penrose%20Relief.serp), then the [matching NoodleS graph](examples/penrose-relief/Penrose%20Relief.noodles). Select **Penrose Relief** in Named Views for the preview angle.
+
+[![Penrose Relief node graph in NoodleS](examples/penrose-relief/Penrose%20Relief%20Graph.png)](examples/penrose-relief/Penrose%20Relief%20Graph.png)
 
 ### Honeycomb
 
@@ -58,7 +68,9 @@ Open the [Serpentine3D model](examples/penrose-relief/Penrose%20Relief.serp), th
 
 **Hexagon Tiling** lays out the cell centers. The graph cuts staggered cavities into both sides of a wax block, leaving shared walls and three rhombic faces at each cell base. **Cell Size**, **Wall Thickness**, and **Comb Depth** control the geometry.
 
-Open the [Serpentine3D model](examples/honeycomb/Honeycomb.serp), then the [matching NoodleS graph](examples/honeycomb/Honeycomb.noodles). Keep the [cell face indices](examples/honeycomb/Honeycomb%20Cell%20Faces.csv) beside the graph. The **Reverse Side** and **Cut Edge** named views show the staggered openings and exposed cell bases. [Graph image](examples/honeycomb/Honeycomb%20Graph.png)
+Open the [Serpentine3D model](examples/honeycomb/Honeycomb.serp), then the [matching NoodleS graph](examples/honeycomb/Honeycomb.noodles). Keep the [cell face indices](examples/honeycomb/Honeycomb%20Cell%20Faces.csv) beside the graph. The **Reverse Side** and **Cut Edge** named views show the staggered openings and exposed cell bases.
+
+[![Honeycomb node graph in NoodleS](examples/honeycomb/Honeycomb%20Graph.png)](examples/honeycomb/Honeycomb%20Graph.png)
 
 ## What you can build
 
