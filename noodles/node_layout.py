@@ -7,6 +7,8 @@ from NodeGraphQt.constants import NodeEnum
 from NodeGraphQt.qgraphics.node_base import NodeItem
 from NodeGraphQt.qgraphics.node_text_item import NodeTextItem
 from Qt import QtCore, QtGui, QtWidgets
+from shiboken6 import delete
+
 from .port_names import compact_port_name, full_port_name
 
 
@@ -204,13 +206,15 @@ class CompactNodeItem(NodeItem):
         port_groups = []
         for side, items in enumerate((self._input_items, self._output_items)):
             ports = [p for p in items if p.isVisible()]
+            port_groups.append(bool(ports))
+            if not ports:
+                continue
             group = grid()
             group.setContentsMargins(0, self.CELL_PADDING, 0, self.CELL_PADDING)
             group.setSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
             anchor_column, label_column = (0, 1) if side == 0 else (1, 0)
-            if ports:
-                group.setColumnFixedWidth(anchor_column, 0)
-                group.setHorizontalSpacing(self.PORT_TEXT_GAP)
+            group.setColumnFixedWidth(anchor_column, 0)
+            group.setHorizontalSpacing(self.PORT_TEXT_GAP)
             for row, port in enumerate(ports):
                 label = items[port]
                 display = compact_port_name(getattr(self, '_noodles_operation', None), port.name, side == 0)
@@ -226,9 +230,7 @@ class CompactNodeItem(NodeItem):
                 if port.display_name:
                     group.addItem(cell(label, ink_center=True, lift=self.PORT_OPTICAL_LIFT), row, label_column,
                                   alignment=QtCore.Qt.AlignVCenter | (QtCore.Qt.AlignLeft if side == 0 else QtCore.Qt.AlignRight))
-            port_groups.append(bool(ports))
-            if ports:
-                root.addItem(group, 1, side * 2, alignment=QtCore.Qt.AlignVCenter)
+            root.addItem(group, 1, side * 2, alignment=QtCore.Qt.AlignVCenter)
 
         widgets = [w for w in self._widgets.values() if w.isVisible() or self._proxy_mode]
         if widgets:
@@ -255,8 +257,11 @@ class CompactNodeItem(NodeItem):
 
     def _calc_size_horizontal(self):
         layout, cells, _ = self._build_grid()
-        size = layout.effectiveSizeHint(QtCore.Qt.PreferredSize)
-        return size.width(), size.height()
+        try:
+            size = layout.effectiveSizeHint(QtCore.Qt.PreferredSize)
+            return size.width(), size.height()
+        finally:
+            delete(layout)
 
     def _draw_node_horizontal(self):
         if getattr(self, "_laying_out", False):
@@ -277,14 +282,18 @@ class CompactNodeItem(NodeItem):
         self._set_text_color(self.text_color)
         self._tooltip_disable(self.disabled)
         layout, cells, header_height = self._build_grid()
-        size = layout.effectiveSizeHint(QtCore.Qt.PreferredSize)
-        self.prepareGeometryChange()
-        self._width, self._height = size.width(), size.height()
-        self._node_grid, self._grid_cells = layout, cells
-        self._header_height = header_height
-        self._editor_sizes = {name: widget.boundingRect().size() for name, widget in self._widgets.items()}
-        self._text_item.show_title(self.title_rect())
-        layout.setGeometry(self.boundingRect())
+        try:
+            size = layout.effectiveSizeHint(QtCore.Qt.PreferredSize)
+            self.prepareGeometryChange()
+            self._width, self._height = size.width(), size.height()
+            self._header_height = header_height
+            self._editor_sizes = {name: widget.boundingRect().size() for name, widget in self._widgets.items()}
+            self._text_item.show_title(self.title_rect())
+            layout.setGeometry(self.boundingRect())
+        finally:
+            # The grid has positioned the items. Destroy its temporary Qt
+            # style widgets while the Python cell adapters are still alive.
+            delete(layout)
         self._proxy_mode_threshold = min(70.0, self._width * 70.0 / 160.0)
         self.update()
 

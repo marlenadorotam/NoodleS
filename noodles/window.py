@@ -8,11 +8,13 @@ import logging
 import threading
 import uuid
 from pathlib import Path
+from weakref import WeakSet
 
 from NodeGraphQt import NodeGraph
 from NodeGraphQt.qgraphics.node_abstract import AbstractNodeItem
 from NodeGraphQt.widgets.viewer import NodeViewer
 from Qt import QtCore, QtGui, QtWidgets
+from shiboken6 import delete, isValid
 
 from . import __version__
 from .core import Connection, GraphEngine, NodeSpec, REQUIRED_INPUTS
@@ -62,6 +64,16 @@ class CanvasViewer(NodeViewer):
     context_node = QtCore.Signal(object)
     exporting_graph_image = False
 
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.session_views = WeakSet()
+        # NodeGraphQt creates this popup without a parent.
+        self._search_widget.setParent(self, self._search_widget.windowFlags())
+
+    def add_node(self, node, pos=None):
+        super().add_node(node, pos)
+        self.session_views.add(node)
+
     def contextMenuEvent(self, event):
         items = self._items_near(self.mapToScene(event.pos()))
         node = next((item for item in items if isinstance(item, AbstractNodeItem)), None)
@@ -105,6 +117,18 @@ class CanvasViewer(NodeViewer):
         self.centerOn(center)
 
 
+class DocumentGraph(NodeGraph):
+    def clear_session(self):
+        views = list(self.viewer().session_views)
+        super().clear_session()
+        self.viewer().session_views.clear()
+        # NodeGraphQt removes items from the scene to support undo. Once the
+        # session and its undo history are gone, release their proxy widgets.
+        for view in views:
+            if isValid(view) and view.scene() is None:
+                delete(view)
+
+
 class MainWindow(QtWidgets.QMainWindow):
     _cad_response = QtCore.Signal(str, object, str)
     _panel_response = QtCore.Signal(str, object, object, str)
@@ -145,7 +169,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self._panel_requests = {}
         self._panel_response.connect(self._panel_finished)
         undo_stack = QtWidgets.QUndoStack(self)
-        self.graph = NodeGraph(undo_stack=undo_stack, viewer=CanvasViewer(undo_stack=undo_stack))
+        self.graph = DocumentGraph(undo_stack=undo_stack, viewer=CanvasViewer(undo_stack=undo_stack))
         self.graph.setParent(self)
         self.graph.set_acyclic(True)
         self.graph.register_nodes(list(NODE_CLASSES))

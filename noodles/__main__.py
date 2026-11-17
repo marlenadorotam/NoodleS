@@ -38,7 +38,6 @@ def main():
     title_icon = QtGui.QIcon(str(icon_dir / "noodles-icon.svg"))
     taskbar_icon = QtGui.QIcon(str(icon_dir / "noodles-icon-taskbar.svg"))
     app.setWindowIcon(QtGui.QIcon(WindowIconEngine(title_icon, taskbar_icon)))
-    app.setStyle("Fusion")
     try:
         from .window import MainWindow
         window = MainWindow(example=False, bridge_session=str(args.bridge_session) if args.bridge_session else None)

@@ -17,6 +17,9 @@ from .backend.moves import MOVE_SPECS
 
 
 def apply_theme(app):
+    # Replacing the application style repolishes every existing widget.
+    if app.property("_noodles_theme_applied"):
+        return
     QtCore.QLocale.setDefault(QtCore.QLocale("en_US"))
     app.setStyle("Fusion")
     app.styleHints().setColorScheme(QtCore.Qt.ColorScheme.Dark)
@@ -35,6 +38,7 @@ def apply_theme(app):
     palette.setColor(QtGui.QPalette.Disabled, QtGui.QPalette.Text, QtGui.QColor("#77818c"))
     palette.setColor(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, QtGui.QColor("#77818c"))
     app.setPalette(palette)
+    app.setProperty("_noodles_theme_applied", True)
 
 
 LIBRARY_COLORS = "background: #24282e; color: #d7dee7;"

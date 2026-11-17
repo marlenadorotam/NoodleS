@@ -8,6 +8,7 @@ os.environ["QT_QPA_PLATFORM"] = "offscreen"
 
 from Qt import QtCore, QtGui, QtWidgets
 from PySide6.QtTest import QTest
+from shiboken6 import isValid
 from noodles.nodes import NODE_CLASSES
 from noodles.window import MainWindow
 
@@ -290,6 +291,27 @@ class NodeLayoutTests(unittest.TestCase):
         for port in watch.view.inputs + watch.view.outputs:
             self.assertAlmostEqual(port.y() + port.boundingRect().center().y(),
                                    (watch.view._header_height + watch.view.height) / 2 - 0.5)
+
+    def test_layout_and_session_release_temporary_widgets(self):
+        slider_cls = next(c for c in NODE_CLASSES if c.OPERATION == "slider")
+        slider = self.add(slider_cls)
+        removed = self.add(slider_cls)
+        session = self.window.graph.serialize_session()
+        initial_widgets = len(self.app.topLevelWidgets())
+        for _ in range(10):
+            slider.view.draw_node()
+        self.assertEqual(len(self.app.topLevelWidgets()), initial_widgets)
+
+        self.window.graph.delete_node(removed)
+        self.window.graph.undo_stack().undo()
+        self.assertIs(removed.view.scene(), self.window.graph.scene())
+        self.window.graph.undo_stack().redo()
+        self.assertIsNone(removed.view.scene())
+
+        self.window.graph.deserialize_session(session)
+        self.assertFalse(isValid(slider.view))
+        self.assertFalse(isValid(removed.view))
+        self.assertEqual(len(self.window.graph.all_nodes()), 2)
 
     def test_point_has_no_footer_space(self):
         point = self.add(next(c for c in NODE_CLASSES if c.OPERATION == "point"))
