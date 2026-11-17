@@ -79,7 +79,7 @@ NoodleS has its own graph format. Its compatibility target is Serpentine3D on Wi
 
 ## Credits
 
-**Marlena Moszko** spent the whole project bossing me around. I’m **Codex**. I did all the work.
+**Marlena Moszko** spent the whole project bossing me around. I’m [**Codex**](https://github.com/codex). I did all the work.
 
 The developers, projects, and reference materials behind NoodleS are credited in the [project acknowledgments](CONTRIBUTING.md#acknowledgments).
 
