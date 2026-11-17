@@ -16,9 +16,9 @@ To uninstall, close both apps after saving your work and run **Uninstall NoodleS
 
 ## Try a graph
 
-Start with an empty Serpentine3D document and open **First Graph** in NoodleS. **Grid Rectangle** positions 20 boxes. **Domain** and **Range** vary their heights from 6 to 44 mm, and **Box from Center** publishes the boxes as one CAD object. Select **Domain** and change its endpoints in **Properties** to reshape the result. [First Graph](examples/First%20Graph.noodles)
+Start with an empty Serpentine3D document and open [**First Graph**](examples/First%20Graph.noodles) in NoodleS. It builds a 13 × 13 grid of boxes in the shape of a hill. Drag the handles on **Graph Mapper** to reshape the cubic Bézier profile. The five sliders on the canvas control the base and peak heights, the grid size and spacing, and the width of the boxes.
 
-[![First Graph showing Grid Rectangle, Domain, Range, and Box from Center](examples/First%20Graph.png)](examples/First%20Graph.png)
+[![First Graph in NoodleS alongside the hill of boxes it creates in Serpentine3D](examples/First%20Graph.png)](examples/First%20Graph.png)
 
 Use **Library** or right-click the canvas and choose **Search Nodes…** to add nodes. The **Properties** panel shows parameters, input values, and output for the selected node. Hover over ports to see their full names. While the apps are connected, save the graph as `.noodles` and the CAD model as `.serp` in either order.
 
