@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+.logs/
+.test-output/
+*.egg-info/
+build/
+dist/
+/logo.noodles
+*.serp
+!/examples/radiolaria/Radiolaria.serp
+!/examples/gyroid/Gyroid CAD Solid.serp
+!/examples/schizophyllum/Schizophyllum.serp
+!/examples/penrose-relief/Penrose Relief.serp
+!/examples/honeycomb/Honeycomb.serp
+*.bak
+.env
+.env.*
+bridge.json
+bridge.instances/
+
+# Local project history and Ryven research
+/AGENTS.md
+/docs/current-state.md
+/docs/audyt-ryven-noodles.md
+/docs/ryven-migration-plan.md
+/docs/architectural-nodes-plan.md
+/docs/parametric-object-audit-2026-10-31.md
+/research/

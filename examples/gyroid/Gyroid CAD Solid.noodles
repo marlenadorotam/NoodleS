@@ -1,0 +1,1299 @@
+{
+  "format": "NoodleS",
+  "schema_version": 1,
+  "session": {
+    "graph": {
+      "layout_direction": 0,
+      "acyclic": true,
+      "pipe_collision": false,
+      "pipe_slicing": true,
+      "pipe_style": 1,
+      "accept_connection_types": "{}",
+      "reject_connection_types": "{}",
+      "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+      "scene_link": {
+        "document_uuid": "f2aceeb0292b49a38baf428fb06cb404",
+        "scene_name": "Gyroid CAD Solid.serp",
+        "revision": "e87e8dd98ba84b248231c3b3285058fa"
+      }
+    },
+    "nodes": {
+      "0x1de1c9142f0": {
+        "type_": "NoodleS.Data.ReadCsvNode",
+        "icon": null,
+        "name": "Gyroid X Samples",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          190.0,
+          40.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "read_csv",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "5ed055a6-38cb-4f1f-b99f-ddbdc0b506ec",
+          "tree_modes": {},
+          "parameters": {
+            "P": "data/Gyroid Samples X.csv",
+            "D": 0,
+            "H": false,
+            "N": true,
+            "reload": 0
+          },
+          "references": []
+        }
+      },
+      "0x1de1c917050": {
+        "type_": "NoodleS.Data.ReadCsvNode",
+        "icon": null,
+        "name": "Gyroid Y Samples",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          190.0,
+          207.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "read_csv",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "0aa04566-e65e-48f3-abf9-2c3438ead640",
+          "tree_modes": {},
+          "parameters": {
+            "P": "data/Gyroid Samples Y.csv",
+            "D": 0,
+            "H": false,
+            "N": true,
+            "reload": 0
+          },
+          "references": []
+        }
+      },
+      "0x1de1c92c230": {
+        "type_": "NoodleS.Data.ReadCsvNode",
+        "icon": null,
+        "name": "Gyroid Z Samples",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          190.0,
+          374.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "read_csv",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "a02d8d77-00b0-423f-aa33-6d41b75435bd",
+          "tree_modes": {},
+          "parameters": {
+            "P": "data/Gyroid Samples Z.csv",
+            "D": 0,
+            "H": false,
+            "N": true,
+            "reload": 0
+          },
+          "references": []
+        }
+      },
+      "0x1de18ec2330": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Cell Size",
+        "color": [
+          101,
+          73,
+          47,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          445.0,
+          -220.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 52.0,
+          "maximum": 86.0,
+          "value": 58.0
+        }
+      },
+      "0x1de1c917770": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Twist",
+        "color": [
+          101,
+          73,
+          47,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          445.0,
+          488.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": -20.0,
+          "maximum": 20.0,
+          "value": 8.0
+        }
+      },
+      "0x1de1908ed20": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Twist by Height",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          720.0,
+          460.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*y/360",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1de1c92fc20": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Rotated X",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          725.0,
+          75.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*cos(z)-y*sin(z)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1de193fe390": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Rotated Y",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          725.0,
+          232.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*sin(z)+y*cos(z)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1de1c914980": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Scaled X",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          930.0,
+          40.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*y/(2*pi)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1de1c92e030": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Scaled Y",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          930.0,
+          207.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*y/(2*pi)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1de1c92d880": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Scaled Z",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          930.0,
+          376.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*y/(2*pi)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1de1c92fdd0": {
+        "type_": "NoodleS.Geometry.PointNode",
+        "icon": null,
+        "name": "Patch Points",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          1140.0,
+          190.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "d5277101-10dc-4c81-b056-019e42f01ba6",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "tree_modes": {},
+          "references": []
+        }
+      },
+      "0x1de1c9566c0": {
+        "type_": "NoodleS.Geometry.SurfaceFromPointsNode",
+        "icon": null,
+        "name": "Gyroid CAD Surfaces",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 152.0,
+        "pos": [
+          1310.0,
+          137.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "surface_from_points",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "37ebc898-ea71-4a12-a630-420ba5fd94d2",
+          "tree_modes": {},
+          "parameters": {
+            "U": 5,
+            "periodic_u": false
+          },
+          "references": []
+        }
+      },
+      "0x1de1c955880": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Sample Points",
+        "color": [
+          46,
+          80,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          1320.0,
+          415.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "47b8ac10-6482-49fd-be8d-4ac6c23b329b",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1de1c92e810": {
+        "type_": "NoodleS.Data.ReadCsvNode",
+        "icon": null,
+        "name": "Join Groups",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          1320.0,
+          -20.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "read_csv",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "b62aee26-618d-498d-86bc-0d0f132831d3",
+          "tree_modes": {},
+          "parameters": {
+            "P": "data/Gyroid Join Groups.csv",
+            "D": 0,
+            "H": false,
+            "N": false,
+            "reload": 0
+          },
+          "references": []
+        }
+      },
+      "0x1de1cadc2f0": {
+        "type_": "NoodleS.Data.ReplacePathsNode",
+        "icon": null,
+        "name": "Group CAD Patches",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          1510.0,
+          95.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "replace_paths",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "6abccc05-c3af-4435-a43d-39eb528bc990",
+          "tree_modes": {},
+          "parameters": {
+            "S": "",
+            "P": "{0}"
+          },
+          "references": []
+        }
+      },
+      "0x1de1c954530": {
+        "type_": "NoodleS.Geometry.BrepJoinNode",
+        "icon": null,
+        "name": "Join Patch Groups",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          1720.0,
+          90.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "brep_join",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "4337b388-f873-4823-a599-157a0745ec35",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1de1c914cb0": {
+        "type_": "NoodleS.Geometry.BrepJoinNode",
+        "icon": null,
+        "name": "Join Gyroid Surface",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          1900.0,
+          90.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "brep_join",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "dd6fe259-e127-4f40-ae8d-376587894709",
+          "tree_modes": {
+            "B": "flatten"
+          },
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1de1c992150": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Wall Thickness",
+        "color": [
+          106,
+          66,
+          36,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          1710.0,
+          266.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 0.6,
+          "maximum": 1.2,
+          "value": 1.2
+        }
+      },
+      "0x1de1c9549b0": {
+        "type_": "NoodleS.Geometry.OffsetNode",
+        "icon": null,
+        "name": "Gyroid Solid",
+        "color": [
+          45,
+          89,
+          77,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          2110.0,
+          100.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "offset",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "0ae0594a-caa8-4b94-b2e1-d5c547da85a8",
+          "tree_modes": {},
+          "parameters": {
+            "D": 1.0,
+            "fill": false,
+            "solid": true
+          },
+          "references": []
+        }
+      },
+      "0x1de1cadcbc0": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Intermediate Surfaces",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          1920.0,
+          465.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "cbd032d3-bd47-42c5-8082-fa89813c342e",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1de1c992ae0": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Construction",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": true,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          2150.0,
+          480.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "d498b83d-7655-4963-abaa-1e7b2349bac8",
+          "node_uuid": "9200ee63-de58-46ff-b845-382722571567",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      }
+    },
+    "connections": [
+      {
+        "out": [
+          "0x1de1c9142f0",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92fc20",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c9142f0",
+          "R"
+        ],
+        "in": [
+          "0x1de193fe390",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c917050",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92fc20",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c917050",
+          "R"
+        ],
+        "in": [
+          "0x1de193fe390",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92c230",
+          "R"
+        ],
+        "in": [
+          "0x1de1908ed20",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92c230",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92d880",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1de18ec2330",
+          "Number"
+        ],
+        "in": [
+          "0x1de1c914980",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1de18ec2330",
+          "Number"
+        ],
+        "in": [
+          "0x1de1c92e030",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1de18ec2330",
+          "Number"
+        ],
+        "in": [
+          "0x1de1c92d880",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c917770",
+          "Number"
+        ],
+        "in": [
+          "0x1de1908ed20",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1908ed20",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92fc20",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1908ed20",
+          "R"
+        ],
+        "in": [
+          "0x1de193fe390",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92fc20",
+          "R"
+        ],
+        "in": [
+          "0x1de1c914980",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1de193fe390",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92e030",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c914980",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92fdd0",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92e030",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92fdd0",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92d880",
+          "R"
+        ],
+        "in": [
+          "0x1de1c92fdd0",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92fdd0",
+          "P"
+        ],
+        "in": [
+          "0x1de1c9566c0",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92fdd0",
+          "P"
+        ],
+        "in": [
+          "0x1de1c955880",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c9566c0",
+          "G"
+        ],
+        "in": [
+          "0x1de1cadc2f0",
+          "T"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c9566c0",
+          "G"
+        ],
+        "in": [
+          "0x1de1cadcbc0",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c92e810",
+          "R"
+        ],
+        "in": [
+          "0x1de1cadc2f0",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1cadc2f0",
+          "T"
+        ],
+        "in": [
+          "0x1de1c954530",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c954530",
+          "B"
+        ],
+        "in": [
+          "0x1de1c914cb0",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c954530",
+          "B"
+        ],
+        "in": [
+          "0x1de1cadcbc0",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c914cb0",
+          "B"
+        ],
+        "in": [
+          "0x1de1c9549b0",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c914cb0",
+          "B"
+        ],
+        "in": [
+          "0x1de1cadcbc0",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1c992150",
+          "Number"
+        ],
+        "in": [
+          "0x1de1c9549b0",
+          "D"
+        ]
+      },
+      {
+        "out": [
+          "0x1de1cadcbc0",
+          "D"
+        ],
+        "in": [
+          "0x1de1c992ae0",
+          "G"
+        ]
+      }
+    ]
+  }
+}

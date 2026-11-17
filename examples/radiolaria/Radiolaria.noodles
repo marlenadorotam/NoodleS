@@ -1,0 +1,2380 @@
+{
+  "format": "NoodleS",
+  "schema_version": 1,
+  "session": {
+    "graph": {
+      "layout_direction": 0,
+      "acyclic": true,
+      "pipe_collision": false,
+      "pipe_slicing": true,
+      "pipe_style": 1,
+      "accept_connection_types": "{}",
+      "reject_connection_types": "{}",
+      "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+      "scene_link": {
+        "document_uuid": "6ef807a9ec81492aa8c4aadd293c8389",
+        "scene_name": "Radiolaria.serp",
+        "revision": "840538da0ff34524a2e40cab30de94ca"
+      }
+    },
+    "nodes": {
+      "0x18d46ac7a40": {
+        "type_": "NoodleS.Geometry.GridRectangleNode",
+        "icon": null,
+        "name": "UV Samples",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 97.578125,
+        "height": 200.0,
+        "pos": [
+          10.0,
+          65.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "grid_rectangle",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "39874ef8-48e2-4b35-8178-e97686b7f155",
+          "tree_modes": {},
+          "parameters": {
+            "P": "XY",
+            "Sx": 0.03125,
+            "Sy": 0.03333333333333333,
+            "Ex": 31,
+            "Ey": 30,
+            "O": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "point_grouping": "rows"
+          },
+          "references": []
+        }
+      },
+      "0x18d46a6bb60": {
+        "type_": "NoodleS.Math.DeconstructPointNode",
+        "icon": null,
+        "name": "UV Coordinates",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          175.0,
+          65.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "deconstruct_point",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "540b816c-c852-41aa-8535-61db06fff2b5",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d46a6b260": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Around Shell",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          340.0,
+          20.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "pi*(0.51+2*x)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x18d49f70380": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Axial Stations",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          340.0,
+          185.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "0.10*x+0.90*(1-(1-x)^1.75)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x18d49f4bb00": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Mouth Radius",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          -190.0,
+          290.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 20.0,
+          "maximum": 35.0,
+          "value": 26.0
+        }
+      },
+      "0x18d49f4a000": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Radius Profile",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          520.0,
+          177.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "(2.5+z*(1-y)^1.48)*(1+0.08*(1-y)*cos(3*x+0.4))*sqrt(1-0.998844*max(0,(y-.86)/.14)^4)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x18d46a6af90": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Shell X",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          720.0,
+          4.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "z*cos(x)+5*y^2+2.25*max(0,(y-.86)/.14)^2",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x18d49f4a2a0": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Shell Y",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          720.0,
+          142.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "0.90*z*sin(x)+1.8*y*(1-y)-.48*max(0,(y-.86)/.14)^2",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x18d49f4aea0": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Scalloped Rim",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          720.0,
+          280.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "56*y+4.2*max(0,(y-.86)/.14)^2+(1-y)^3*(3.8*cos(3*x+0.4)+1.45*cos(6*x-0.2))",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x18d46ac6b10": {
+        "type_": "NoodleS.Geometry.PointNode",
+        "icon": null,
+        "name": "Shell Points",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          930.0,
+          112.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "1ca306e2-632c-4d29-ac45-7566f7d4c274",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "tree_modes": {},
+          "references": []
+        }
+      },
+      "0x18d49fa91c0": {
+        "type_": "NoodleS.Geometry.SurfaceFromPointsNode",
+        "icon": null,
+        "name": "Shell Form",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 152.0,
+        "pos": [
+          1085.0,
+          112.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "surface_from_points",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "2885f6aa-eef7-476f-916c-ec47b1a41409",
+          "tree_modes": {
+            "P": "flatten"
+          },
+          "parameters": {
+            "U": "auto",
+            "periodic_u": true
+          },
+          "references": []
+        }
+      },
+      "0x18d49f73350": {
+        "type_": "NoodleS.Geometry.RectangleNode",
+        "icon": null,
+        "name": "Flat Pattern Bounds",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 248.0,
+        "pos": [
+          10.0,
+          595.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "rectangle",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "b6866fa1-087c-416d-bc53-b9eb2f4b6010",
+          "tree_modes": {},
+          "parameters": {
+            "X": 128.0,
+            "Y": 62.0,
+            "C": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "P": "XY"
+          },
+          "references": []
+        }
+      },
+      "0x18d49f4bd40": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Pore Count",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          -290.0,
+          840.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "integer",
+          "minimum": 76,
+          "maximum": 165,
+          "value": 130
+        }
+      },
+      "0x18d49f71790": {
+        "type_": "NoodleS.Inputs.NumberNode",
+        "icon": null,
+        "name": "Pattern Seed",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 221.203125,
+        "height": 58.0,
+        "pos": [
+          -190.0,
+          995.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "integer",
+          "value": 17
+        }
+      },
+      "0x18d49f731a0": {
+        "type_": "NoodleS.Geometry.Populate2DNode",
+        "icon": null,
+        "name": "Pore Sites",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          175.0,
+          730.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "populate_2d",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "29397d22-d132-4994-9ff6-00b682e76057",
+          "tree_modes": {},
+          "parameters": {
+            "N": 100,
+            "S": 0
+          },
+          "references": []
+        }
+      },
+      "0x18d49f72270": {
+        "type_": "NoodleS.Geometry.VoronoiNode",
+        "icon": null,
+        "name": "Voronoi Cells",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.140625,
+        "height": 104.0,
+        "pos": [
+          340.0,
+          675.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "voronoi",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "4e4bd1ba-531d-46bd-a0e9-8f471e8eb147",
+          "tree_modes": {},
+          "parameters": {
+            "periodic_u": false
+          },
+          "references": []
+        }
+      },
+      "0x18d49f4b3b0": {
+        "type_": "NoodleS.Operations.AreaNode",
+        "icon": null,
+        "name": "Cell Centers",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          506.0,
+          808.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "area",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "f0294337-d945-467a-a95b-a54348b035b5",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49f73b00": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Pore Opening",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          333.0,
+          1070.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 0.66,
+          "maximum": 0.84,
+          "value": 0.79
+        }
+      },
+      "0x18d49f4a4e0": {
+        "type_": "NoodleS.Geometry.ScaleNode",
+        "icon": null,
+        "name": "Inset Cells",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 100.421875,
+        "height": 152.0,
+        "pos": [
+          690.0,
+          730.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "scale",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "3ca72064-4db2-4031-bbc9-6792f22e26c8",
+          "tree_modes": {},
+          "parameters": {
+            "C": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "F": 1.0,
+            "Cp": true
+          },
+          "references": []
+        }
+      },
+      "0x18d49f495e0": {
+        "type_": "NoodleS.Operations.DivideCurveNode",
+        "icon": null,
+        "name": "Sample Cell Outlines",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          857.0,
+          730.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "divide_curve",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "ce23cebb-1f73-457f-a922-5215ca3061dc",
+          "tree_modes": {},
+          "parameters": {
+            "N": 13,
+            "K": false
+          },
+          "references": []
+        }
+      },
+      "0x18d49faad50": {
+        "type_": "NoodleS.Geometry.InterpCurveNode",
+        "icon": null,
+        "name": "Rounded Pores",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 224.0,
+        "pos": [
+          1025.0,
+          730.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "interpcurve",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "6ea07c3f-2a02-4f56-a5d4-e8fe6c3474eb",
+          "tree_modes": {},
+          "parameters": {
+            "D": 3,
+            "C": true,
+            "T": true,
+            "K": 1
+          },
+          "references": []
+        }
+      },
+      "0x18d49f4a780": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Outer Rim + Pores",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          1216.0,
+          650.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "be0f120e-34f2-4545-b98d-12f9f0e455c1",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49f70560": {
+        "type_": "NoodleS.Geometry.PlanarSurfaceNode",
+        "icon": null,
+        "name": "Perforated Pattern",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 152.0,
+        "pos": [
+          1378.0,
+          650.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "planar_surface",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "22297db1-77fc-4c5c-8072-0d70f2135854",
+          "tree_modes": {
+            "C": "flatten"
+          },
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49f73080": {
+        "type_": "NoodleS.Geometry.BoundingBoxNode",
+        "icon": null,
+        "name": "Pattern Frame",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          1520.0,
+          649.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "bounding_box",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "5038a437-cad7-40fb-8ff2-5077e21ffa0c",
+          "tree_modes": {},
+          "parameters": {
+            "P": "XY",
+            "box_mode": "per_object"
+          },
+          "references": []
+        }
+      },
+      "0x18d49f73a70": {
+        "type_": "NoodleS.Geometry.SurfaceMorphNode",
+        "icon": null,
+        "name": "Pore Surface",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 176.0,
+        "pos": [
+          1720.0,
+          376.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "surface_morph",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "8126157c-362a-404c-9ee1-ddd0fd229eeb",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49fabc20": {
+        "type_": "NoodleS.Operations.SurfaceIsocurvesNode",
+        "icon": null,
+        "name": "Crown Boundary",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 176.0,
+        "pos": [
+          1260.0,
+          0.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "surface_isocurves",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "a127850a-4534-4532-9704-c5eb41693ce5",
+          "tree_modes": {},
+          "parameters": {
+            "u": 0.5,
+            "v": 1.0,
+            "N": true,
+            "D": 1,
+            "F": 0
+          },
+          "references": []
+        }
+      },
+      "0x18d49faa810": {
+        "type_": "NoodleS.Geometry.PlanarSurfaceNode",
+        "icon": null,
+        "name": "Crown Closure",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 152.0,
+        "pos": [
+          1450.0,
+          0.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "planar_surface",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "e543dd99-15d4-4a74-b02f-a27b7ceafbfb",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49faaf90": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Skin + Closure",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          1880.0,
+          230.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "75d62cdb-0581-423a-9ffe-202758ab2ee4",
+          "tree_modes": {
+            "A": "flatten",
+            "B": "flatten"
+          },
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49f70f50": {
+        "type_": "NoodleS.Geometry.BrepJoinNode",
+        "icon": null,
+        "name": "Joined Skin",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          2055.0,
+          300.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "brep_join",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "0dbec1d9-4d76-4868-9eba-1b3ebe3dfaf4",
+          "tree_modes": {
+            "B": "flatten"
+          },
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49faa6c0": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Wall Thickness",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          1800.0,
+          75.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 0.1,
+          "maximum": 0.32,
+          "value": 0.24
+        }
+      },
+      "0x18d4695a690": {
+        "type_": "NoodleS.Geometry.OffsetNode",
+        "icon": null,
+        "name": "Radiolaria Shell",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          2220.0,
+          294.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "offset",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "fd14e451-20ab-44ef-b534-bca91100f03a",
+          "tree_modes": {},
+          "parameters": {
+            "D": 1.0,
+            "fill": false,
+            "solid": true
+          },
+          "references": []
+        }
+      },
+      "0x18d49f49c10": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Form Construction",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          2410.0,
+          142.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "875ade77-489f-427d-ac8a-599646498503",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d45840ce0": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Pattern Construction",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          2410.0,
+          760.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "59bd0a81-11c0-4eed-940a-5628c405d667",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49f49310": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Pore Construction",
+        "color": [
+          55,
+          68,
+          91,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          2410.0,
+          1030.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "8200d246-05fb-4d1b-924e-632bb8502039",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d4a1b5a30": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Crown Construction",
+        "color": [
+          102,
+          73,
+          45,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          2410.0,
+          -45.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "514ebb87-7e0c-4d2e-8db9-554f28f82378",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d4a01aae0": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Form Construction",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          2580.0,
+          142.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "498877c7-343c-44ce-8004-1c7269db3323",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49f4a390": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Pattern Construction",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          2580.0,
+          760.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "fc3092f3-9c56-43f8-9ee2-d8ecd9de3bdf",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d4a1b6120": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Pore Construction",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          2580.0,
+          1030.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "d4eecdac-7515-4a82-b33c-c09faa3cd2a4",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x18d49f72750": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Crown Construction",
+        "color": [
+          39,
+          82,
+          72,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": true,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          2580.0,
+          -45.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "35ad2d2d-84af-4b56-a509-297268656173",
+          "node_uuid": "9b034428-dece-4c7b-874c-14793f284488",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      }
+    },
+    "connections": [
+      {
+        "out": [
+          "0x18d46ac7a40",
+          "G"
+        ],
+        "in": [
+          "0x18d49f49c10",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46ac7a40",
+          "P"
+        ],
+        "in": [
+          "0x18d46a6bb60",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46a6bb60",
+          "X"
+        ],
+        "in": [
+          "0x18d46a6b260",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46a6bb60",
+          "Y"
+        ],
+        "in": [
+          "0x18d49f70380",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46a6b260",
+          "R"
+        ],
+        "in": [
+          "0x18d49f4a000",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46a6b260",
+          "R"
+        ],
+        "in": [
+          "0x18d46a6af90",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46a6b260",
+          "R"
+        ],
+        "in": [
+          "0x18d49f4a2a0",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46a6b260",
+          "R"
+        ],
+        "in": [
+          "0x18d49f4aea0",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70380",
+          "R"
+        ],
+        "in": [
+          "0x18d49f4a000",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70380",
+          "R"
+        ],
+        "in": [
+          "0x18d46a6af90",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70380",
+          "R"
+        ],
+        "in": [
+          "0x18d49f4a2a0",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70380",
+          "R"
+        ],
+        "in": [
+          "0x18d49f4aea0",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4bb00",
+          "Number"
+        ],
+        "in": [
+          "0x18d49f4a000",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4a000",
+          "R"
+        ],
+        "in": [
+          "0x18d46a6af90",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4a000",
+          "R"
+        ],
+        "in": [
+          "0x18d49f4a2a0",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46a6af90",
+          "R"
+        ],
+        "in": [
+          "0x18d46ac6b10",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4a2a0",
+          "R"
+        ],
+        "in": [
+          "0x18d46ac6b10",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4aea0",
+          "R"
+        ],
+        "in": [
+          "0x18d46ac6b10",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46ac6b10",
+          "P"
+        ],
+        "in": [
+          "0x18d49fa91c0",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x18d46ac6b10",
+          "P"
+        ],
+        "in": [
+          "0x18d49f49c10",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49fa91c0",
+          "G"
+        ],
+        "in": [
+          "0x18d49f73a70",
+          "S"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49fa91c0",
+          "G"
+        ],
+        "in": [
+          "0x18d49fabc20",
+          "S"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49fa91c0",
+          "G"
+        ],
+        "in": [
+          "0x18d49f49c10",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73350",
+          "C"
+        ],
+        "in": [
+          "0x18d49f731a0",
+          "R"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73350",
+          "C"
+        ],
+        "in": [
+          "0x18d49f72270",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73350",
+          "C"
+        ],
+        "in": [
+          "0x18d49f4a780",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73350",
+          "C"
+        ],
+        "in": [
+          "0x18d45840ce0",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4bd40",
+          "Number"
+        ],
+        "in": [
+          "0x18d49f731a0",
+          "N"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f71790",
+          "Number"
+        ],
+        "in": [
+          "0x18d49f731a0",
+          "S"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f731a0",
+          "P"
+        ],
+        "in": [
+          "0x18d49f72270",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f72270",
+          "C"
+        ],
+        "in": [
+          "0x18d49f4b3b0",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f72270",
+          "C"
+        ],
+        "in": [
+          "0x18d49f4a4e0",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f72270",
+          "C"
+        ],
+        "in": [
+          "0x18d45840ce0",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4b3b0",
+          "C"
+        ],
+        "in": [
+          "0x18d49f4a4e0",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73b00",
+          "Number"
+        ],
+        "in": [
+          "0x18d49f4a4e0",
+          "F"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4a4e0",
+          "G"
+        ],
+        "in": [
+          "0x18d49f495e0",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4a4e0",
+          "G"
+        ],
+        "in": [
+          "0x18d45840ce0",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f495e0",
+          "P"
+        ],
+        "in": [
+          "0x18d49faad50",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49faad50",
+          "C"
+        ],
+        "in": [
+          "0x18d49f4a780",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49faad50",
+          "C"
+        ],
+        "in": [
+          "0x18d45840ce0",
+          "D"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f4a780",
+          "D"
+        ],
+        "in": [
+          "0x18d49f70560",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70560",
+          "G"
+        ],
+        "in": [
+          "0x18d49f73080",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70560",
+          "G"
+        ],
+        "in": [
+          "0x18d49f73a70",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70560",
+          "G"
+        ],
+        "in": [
+          "0x18d49f49310",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73080",
+          "B"
+        ],
+        "in": [
+          "0x18d49f73a70",
+          "R"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73080",
+          "G"
+        ],
+        "in": [
+          "0x18d49f49310",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73a70",
+          "G"
+        ],
+        "in": [
+          "0x18d49faaf90",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f73a70",
+          "G"
+        ],
+        "in": [
+          "0x18d49f49310",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49fabc20",
+          "U"
+        ],
+        "in": [
+          "0x18d49faa810",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49fabc20",
+          "U"
+        ],
+        "in": [
+          "0x18d4a1b5a30",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49faa810",
+          "G"
+        ],
+        "in": [
+          "0x18d49faaf90",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49faa810",
+          "G"
+        ],
+        "in": [
+          "0x18d4a1b5a30",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49faaf90",
+          "D"
+        ],
+        "in": [
+          "0x18d49f70f50",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70f50",
+          "B"
+        ],
+        "in": [
+          "0x18d4695a690",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f70f50",
+          "B"
+        ],
+        "in": [
+          "0x18d4a1b5a30",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49faa6c0",
+          "Number"
+        ],
+        "in": [
+          "0x18d4695a690",
+          "D"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f49c10",
+          "D"
+        ],
+        "in": [
+          "0x18d4a01aae0",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x18d45840ce0",
+          "D"
+        ],
+        "in": [
+          "0x18d49f4a390",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x18d49f49310",
+          "D"
+        ],
+        "in": [
+          "0x18d4a1b6120",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x18d4a1b5a30",
+          "D"
+        ],
+        "in": [
+          "0x18d49f72750",
+          "G"
+        ]
+      }
+    ]
+  }
+}

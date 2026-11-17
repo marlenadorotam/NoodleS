@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noodles"
+description = "Standalone NodeGraphQt editor for parametric design"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "Marlena Moszko"}]
+requires-python = ">=3.12"
+dynamic = ["dependencies", "version"]
+
+[project.gui-scripts]
+noodles = "noodles.__main__:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = "noodles.backend.version.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["noodles*"]
+
+[tool.setuptools.package-data]
+noodles = ["combo-arrow.svg", "menu-check.svg", "noodles-icon.svg", "noodles-icon-taskbar.svg", "noodles-icon.ico"]

@@ -1,0 +1,1303 @@
+{
+  "format": "NoodleS",
+  "schema_version": 1,
+  "session": {
+    "graph": {
+      "layout_direction": 0,
+      "acyclic": true,
+      "pipe_collision": false,
+      "pipe_slicing": true,
+      "pipe_style": 1,
+      "accept_connection_types": "{}",
+      "reject_connection_types": "{}",
+      "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+      "scene_link": {
+        "document_uuid": "cd43c65e1ef44f7ca48c1cab1760b93f",
+        "scene_name": "Penrose Relief.serp",
+        "revision": "21ce4565abf74c158c3618e63ea1c43d"
+      }
+    },
+    "nodes": {
+      "0x1ce5d897da0": {
+        "type_": "NoodleS.Geometry.RectangleNode",
+        "icon": null,
+        "name": "Rectangle",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 248.0,
+        "pos": [
+          0.0,
+          165.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "rectangle",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "4121ff6c-36c7-4895-9d79-1cc7013aa66d",
+          "tree_modes": {},
+          "parameters": {
+            "X": 154.0,
+            "Y": 104.0,
+            "C": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "P": "XY"
+          },
+          "references": []
+        }
+      },
+      "0x1ce61559f70": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Generations",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          -170.0,
+          448.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "integer",
+          "minimum": 2,
+          "maximum": 5,
+          "value": 4
+        }
+      },
+      "0x1ce6155a600": {
+        "type_": "NoodleS.Operations.PenroseP2Node",
+        "icon": null,
+        "name": "Penrose P2",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.140625,
+        "height": 152.0,
+        "pos": [
+          175.0,
+          225.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "penrose_p2",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "a404864b-6859-42cf-bde5-0dc598b6562d",
+          "tree_modes": {},
+          "parameters": {
+            "S": 100.0,
+            "N": 4,
+            "matching_arcs": false
+          },
+          "references": []
+        }
+      },
+      "0x1ce6157dd30": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Wave Height",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          410.0,
+          -60.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 0.0,
+          "maximum": 22.0,
+          "value": 14.0
+        }
+      },
+      "0x1ce6157e8d0": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Tile Scale",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          700.0,
+          -60.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 0.86,
+          "maximum": 0.98,
+          "value": 0.93
+        }
+      },
+      "0x1ce61507d40": {
+        "type_": "NoodleS.Operations.AreaNode",
+        "icon": null,
+        "name": "Kite Area",
+        "color": [
+          45,
+          89,
+          77,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          360.0,
+          170.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "area",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "26f6b508-6344-448d-8412-55abf6f8b58e",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1ce6157caa0": {
+        "type_": "NoodleS.Math.DeconstructPointNode",
+        "icon": null,
+        "name": "Kite XY",
+        "color": [
+          45,
+          89,
+          77,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          500.0,
+          170.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "deconstruct_point",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "6bf73b30-d21a-4144-82c3-65775b35c102",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1ce6158d010": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Kite Wave",
+        "color": [
+          45,
+          89,
+          77,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          684.2502415285852,
+          140.56231885356104
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "3 + z*(0.5 + 0.5*sin(0.052*x + 0.031*y + 0.35*sin(0.06*y)))",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1ce5d629d60": {
+        "type_": "NoodleS.Math.UnitZNode",
+        "icon": null,
+        "name": "Kite Z",
+        "color": [
+          45,
+          89,
+          77,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          790.0,
+          194.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "factor": 1.0
+        }
+      },
+      "0x1ce6157c290": {
+        "type_": "NoodleS.Geometry.ScaleNode",
+        "icon": null,
+        "name": "Kite Scale",
+        "color": [
+          45,
+          89,
+          77,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 100.421875,
+        "height": 152.0,
+        "pos": [
+          666.8215320836794,
+          296.5802622566273
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "scale",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "d4c92f78-3832-47ba-806a-1f7e888fc4b5",
+          "tree_modes": {},
+          "parameters": {
+            "C": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "F": 1.0,
+            "Cp": true
+          },
+          "references": []
+        }
+      },
+      "0x1ce6155ac00": {
+        "type_": "NoodleS.Geometry.ExtrudeNode",
+        "icon": null,
+        "name": "Kite Extrude",
+        "color": [
+          45,
+          89,
+          77,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          970.0,
+          234.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "extrude",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "2c9781c2-6423-4c56-979c-fb74b6b1bb69",
+          "tree_modes": {},
+          "parameters": {
+            "V": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "C": true
+          },
+          "references": []
+        }
+      },
+      "0x1ce6158f110": {
+        "type_": "NoodleS.Operations.AreaNode",
+        "icon": null,
+        "name": "Dart Area",
+        "color": [
+          106,
+          66,
+          36,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          360.0,
+          505.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "area",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "8e5c09d9-a2f2-43e9-a6d8-9f3ffe1a9283",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1ce6158f380": {
+        "type_": "NoodleS.Math.DeconstructPointNode",
+        "icon": null,
+        "name": "Dart XY",
+        "color": [
+          106,
+          66,
+          36,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          500.0,
+          505.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "deconstruct_point",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "88c8ad9e-1ec0-423b-984c-da14d4cd63ce",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1ce6158c350": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Dart Wave",
+        "color": [
+          106,
+          66,
+          36,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          635.1874396178538,
+          485.37487923570734
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "6 + z*(0.5 + 0.5*sin(0.052*x + 0.031*y + 0.35*sin(0.06*y)))",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1ce6158c1d0": {
+        "type_": "NoodleS.Math.UnitZNode",
+        "icon": null,
+        "name": "Dart Z",
+        "color": [
+          106,
+          66,
+          36,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          790.0,
+          529.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "factor": 1.0
+        }
+      },
+      "0x1ce61558f20": {
+        "type_": "NoodleS.Geometry.ScaleNode",
+        "icon": null,
+        "name": "Dart Scale",
+        "color": [
+          106,
+          66,
+          36,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 100.421875,
+        "height": 152.0,
+        "pos": [
+          647.1964113193867,
+          647.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "scale",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "3a357a7d-e709-4dce-9bd7-38f2a422b6c2",
+          "tree_modes": {},
+          "parameters": {
+            "C": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "F": 1.0,
+            "Cp": true
+          },
+          "references": []
+        }
+      },
+      "0x1ce5e0824b0": {
+        "type_": "NoodleS.Geometry.ExtrudeNode",
+        "icon": null,
+        "name": "Dart Extrude",
+        "color": [
+          106,
+          66,
+          36,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          970.0,
+          569.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "extrude",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "02c89a1f-c1d7-40b3-a1f5-7eb66cf052ce",
+          "tree_modes": {},
+          "parameters": {
+            "V": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "C": true
+          },
+          "references": []
+        }
+      },
+      "0x1ce5e082330": {
+        "type_": "NoodleS.Geometry.BoxFromCenterNode",
+        "icon": null,
+        "name": "Plinth",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 248.0,
+        "pos": [
+          158.17846791632056,
+          545.7129055509413
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "box_from_center",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "ad068509-8163-4232-9752-3399ea475a64",
+          "tree_modes": {},
+          "parameters": {
+            "X": 159.0,
+            "Y": 109.0,
+            "Z": 2.5,
+            "O": [
+              0.0,
+              0.0,
+              -2.5
+            ],
+            "P": "XY"
+          },
+          "references": []
+        }
+      },
+      "0x1ce6158c290": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Rectangle",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          170.0,
+          100.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "7d92bada-0e79-4e06-b57f-02b4d0c4f196",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1ce5e082ae0": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Penrose P2",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          355.0,
+          88.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "ceec3893-5669-41c3-ac91-e93b756b067c",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1ce615581a0": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Kite Scale",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          829.6251207642927,
+          369.4376811464389
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "29370971-acdc-43df-80f3-baf2898766f5",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1ce6157c0e0": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Dart Scale",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          826.8215320836794,
+          707.2412698270521
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "d6da2293-3c16-4c27-88aa-b59375501f93",
+          "node_uuid": "d063b588-80ed-4375-9179-17340dcacb3a",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      }
+    },
+    "connections": [
+      {
+        "out": [
+          "0x1ce5d897da0",
+          "C"
+        ],
+        "in": [
+          "0x1ce6155a600",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce5d897da0",
+          "C"
+        ],
+        "in": [
+          "0x1ce6158c290",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce61559f70",
+          "Number"
+        ],
+        "in": [
+          "0x1ce6155a600",
+          "N"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6155a600",
+          "C"
+        ],
+        "in": [
+          "0x1ce5e082ae0",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6155a600",
+          "K"
+        ],
+        "in": [
+          "0x1ce61507d40",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6155a600",
+          "K"
+        ],
+        "in": [
+          "0x1ce6157c290",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6155a600",
+          "D"
+        ],
+        "in": [
+          "0x1ce6158f110",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6155a600",
+          "D"
+        ],
+        "in": [
+          "0x1ce61558f20",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157dd30",
+          "Number"
+        ],
+        "in": [
+          "0x1ce6158d010",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157dd30",
+          "Number"
+        ],
+        "in": [
+          "0x1ce6158c350",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157e8d0",
+          "Number"
+        ],
+        "in": [
+          "0x1ce6157c290",
+          "F"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157e8d0",
+          "Number"
+        ],
+        "in": [
+          "0x1ce61558f20",
+          "F"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce61507d40",
+          "C"
+        ],
+        "in": [
+          "0x1ce6157caa0",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce61507d40",
+          "C"
+        ],
+        "in": [
+          "0x1ce6157c290",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157caa0",
+          "X"
+        ],
+        "in": [
+          "0x1ce6158d010",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157caa0",
+          "Y"
+        ],
+        "in": [
+          "0x1ce6158d010",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6158d010",
+          "R"
+        ],
+        "in": [
+          "0x1ce5d629d60",
+          "F"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce5d629d60",
+          "V"
+        ],
+        "in": [
+          "0x1ce6155ac00",
+          "V"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157c290",
+          "G"
+        ],
+        "in": [
+          "0x1ce6155ac00",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6157c290",
+          "G"
+        ],
+        "in": [
+          "0x1ce615581a0",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6158f110",
+          "C"
+        ],
+        "in": [
+          "0x1ce6158f380",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6158f110",
+          "C"
+        ],
+        "in": [
+          "0x1ce61558f20",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6158f380",
+          "X"
+        ],
+        "in": [
+          "0x1ce6158c350",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6158f380",
+          "Y"
+        ],
+        "in": [
+          "0x1ce6158c350",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6158c350",
+          "R"
+        ],
+        "in": [
+          "0x1ce6158c1d0",
+          "F"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce6158c1d0",
+          "V"
+        ],
+        "in": [
+          "0x1ce5e0824b0",
+          "V"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce61558f20",
+          "G"
+        ],
+        "in": [
+          "0x1ce5e0824b0",
+          "G"
+        ]
+      },
+      {
+        "out": [
+          "0x1ce61558f20",
+          "G"
+        ],
+        "in": [
+          "0x1ce6157c0e0",
+          "G"
+        ]
+      }
+    ]
+  }
+}

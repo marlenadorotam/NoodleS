@@ -1,0 +1,1771 @@
+{
+  "format": "NoodleS",
+  "schema_version": 1,
+  "session": {
+    "graph": {
+      "layout_direction": 0,
+      "acyclic": true,
+      "pipe_collision": false,
+      "pipe_slicing": true,
+      "pipe_style": 1,
+      "accept_connection_types": "{}",
+      "reject_connection_types": "{}",
+      "project_uuid": "3fc4854f-fe40-4eeb-a190-aea09239168f",
+      "scene_link": {
+        "document_uuid": "01f882ebb3da4f468ead6fb1085254e8",
+        "scene_name": "Schizophyllum.serp",
+        "revision": "0d7d00882c5f4bd982b2ddf45dcbf8b2"
+      }
+    },
+    "nodes": {
+      "0x1d1c8641a30": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Cap Radius",
+        "color": [
+          103,
+          70,
+          41,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          -420.0,
+          75.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 26.0,
+          "maximum": 49.0,
+          "value": 39.0
+        }
+      },
+      "0x1d1c81aa810": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Fan Spread",
+        "color": [
+          103,
+          70,
+          41,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          -420.0,
+          230.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 2.3,
+          "maximum": 3.2,
+          "value": 2.86
+        }
+      },
+      "0x1d1c8642cc0": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Gill Count",
+        "color": [
+          103,
+          70,
+          41,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          -420.0,
+          575.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "integer",
+          "minimum": 31,
+          "maximum": 63,
+          "value": 53
+        }
+      },
+      "0x1d1cbab04d0": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Gill Relief",
+        "color": [
+          103,
+          70,
+          41,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 251.203125,
+        "height": 98.0,
+        "pos": [
+          -420.0,
+          760.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "double",
+          "minimum": 0.6,
+          "maximum": 1.9,
+          "value": 1.25
+        }
+      },
+      "0x1d1cbab21b0": {
+        "type_": "NoodleS.Math.SeriesNode",
+        "icon": null,
+        "name": "Gill Indices",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          0.0,
+          640.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "start": 0.0,
+          "step": 1.0,
+          "count": 10
+        }
+      },
+      "0x1d1cbab1ee0": {
+        "type_": "NoodleS.Math.SeriesNode",
+        "icon": null,
+        "name": "Section Samples",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          0.0,
+          820.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "start": 0.0,
+          "step": 1.0,
+          "count": 119
+        }
+      },
+      "0x1d1c8642000": {
+        "type_": "NoodleS.Data.CrossReferenceNode",
+        "icon": null,
+        "name": "One Branch per Gill",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          200.0,
+          669.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "cross_reference",
+          "project_uuid": "3fc4854f-fe40-4eeb-a190-aea09239168f",
+          "node_uuid": "c0f553aa-3c85-49a0-8163-c5cd591d4dd9",
+          "tree_modes": {
+            "A": "graft"
+          },
+          "parameters": {
+            "pairing": "holistic"
+          },
+          "references": []
+        }
+      },
+      "0x1d1cbad8d10": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Fold Section Station",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          425.0,
+          836.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "floor(x/17)/6",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbad9250": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gill Length Station",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          425.0,
+          981.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "(x%17)/16",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1c8642780": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Spaced Gill Sections",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          425.0,
+          592.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "(x+y)/z",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1c738a930": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gill Angle",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          665.0,
+          600.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "(x-.5)*y",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbadb800": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Growth from the Base",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          665.0,
+          773.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "y+(1-y)*(.023+.040*cos(x)^2)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1c85fcda0": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Staggered Gill Roots",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          425.0,
+          1130.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "(.23+.77*min(1,x/.62))*(.19+.81*min(1,5.2*max(0,x-(y%2)*(.2+.06*sin(.61*y)))))",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb0ec30": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Split Gill Section",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          665.0,
+          1130.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "max(0,sin(pi*x))^2*(.64-.36*cos(4*pi*x))",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbab1160": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Two Gill Lips",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          900.0,
+          1110.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*y*z",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb246e0": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Lobed Outline",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          900.0,
+          608.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "1+.03*cos(6.5*x)+.058*cos(14*x+1)+.017*sin(33*x+.7)-.19*exp(-((x-.09)/.115)^2)-.15*exp(-((x+.98)/.16)^2)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb0d700": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gills · Reach",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          1100.0,
+          608.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "z*y*(1+(x-1)*y^1.6)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1c83ee540": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gills · Bend",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          900.0,
+          770.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x+.34*(1-y)*sin(2*x+.5)+.038*y*sin(6*x+8*y)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb27320": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gills · Camber",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          900.0,
+          932.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "y^1.35*(13*sin(x)^2-7+6.5*sin(4.2*x-1))+3.7*y^3*sin(11*x+2*y)+2.1*y^3*cos(20*x+2)",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb27710": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gills · X",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          1300.0,
+          608.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x*sin(y)+4.2*z^2",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1c8641b80": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gills · Height",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          1300.0,
+          770.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "1.20*x*cos(y)+3*z+4.8*z^2",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb25340": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Rounded Base",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          1110.0,
+          422.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "-.82+.86*sin(x)^2",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb4db80": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Base Transition",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          900.0,
+          424.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "max(0,1-4.8*x)^3",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb0e120": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gills · Z",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          1500.0,
+          580.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x+(y-x)*z",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1cbb26480": {
+        "type_": "NoodleS.Math.ExpressionNode",
+        "icon": null,
+        "name": "Gills · Y",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 104.0,
+        "pos": [
+          1300.0,
+          932.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "tree_modes": {},
+          "formula": "x-y",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "0x1d1c86426f0": {
+        "type_": "NoodleS.Geometry.PointNode",
+        "icon": null,
+        "name": "Gills Points",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          1690.0,
+          770.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "project_uuid": "3fc4854f-fe40-4eeb-a190-aea09239168f",
+          "node_uuid": "d903fa43-8edb-46b0-a81a-7eeaeb075ff8",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "tree_modes": {},
+          "references": []
+        }
+      },
+      "0x1d1cbb25e50": {
+        "type_": "NoodleS.Geometry.SurfaceFromPointsNode",
+        "icon": null,
+        "name": "Split Lamellae",
+        "color": [
+          48,
+          84,
+          71,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 152.0,
+        "pos": [
+          1870.0,
+          770.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "surface_from_points",
+          "project_uuid": "3fc4854f-fe40-4eeb-a190-aea09239168f",
+          "node_uuid": "3220aa23-3cda-4f98-9748-3a7ac25485f3",
+          "tree_modes": {},
+          "parameters": {
+            "U": 17,
+            "periodic_u": false
+          },
+          "references": []
+        }
+      },
+      "0x1d1c85fd280": {
+        "type_": "NoodleS.Geometry.BrepJoinNode",
+        "icon": null,
+        "name": "Schizophyllum",
+        "color": [
+          60,
+          80,
+          94,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 80.0,
+        "pos": [
+          2050.0,
+          640.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "brep_join",
+          "project_uuid": "3fc4854f-fe40-4eeb-a190-aea09239168f",
+          "node_uuid": "85731ad5-c179-4714-9bfa-257ee1f6b61a",
+          "tree_modes": {
+            "B": "flatten"
+          },
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1d1cbb25c40": {
+        "type_": "NoodleS.Data.MergeNode",
+        "icon": null,
+        "name": "Construction Geometry",
+        "color": [
+          60,
+          80,
+          94,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 95.0,
+        "height": 128.0,
+        "pos": [
+          2050.0,
+          882.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "merge",
+          "project_uuid": "3fc4854f-fe40-4eeb-a190-aea09239168f",
+          "node_uuid": "fffdd5c8-3ee8-4441-b28c-32ee58ff85e5",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      },
+      "0x1d1c783de20": {
+        "type_": "NoodleS.VisualHelpers.HideNode",
+        "icon": null,
+        "name": "Hide Construction",
+        "color": [
+          60,
+          80,
+          94,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": true,
+        "visible": true,
+        "width": 95.0,
+        "height": 56.0,
+        "pos": [
+          2230.0,
+          882.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "mode": "generate",
+          "primitive": "hide",
+          "project_uuid": "3fc4854f-fe40-4eeb-a190-aea09239168f",
+          "node_uuid": "47aa1b03-9b52-488f-8af4-d77ca8837c1c",
+          "tree_modes": {},
+          "parameters": {},
+          "references": []
+        }
+      }
+    },
+    "connections": [
+      {
+        "out": [
+          "0x1d1c8641a30",
+          "Number"
+        ],
+        "in": [
+          "0x1d1cbb0d700",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c81aa810",
+          "Number"
+        ],
+        "in": [
+          "0x1d1c738a930",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8642cc0",
+          "Number"
+        ],
+        "in": [
+          "0x1d1cbab21b0",
+          "C"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8642cc0",
+          "Number"
+        ],
+        "in": [
+          "0x1d1c8642780",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbab04d0",
+          "Number"
+        ],
+        "in": [
+          "0x1d1cbab1160",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbab21b0",
+          "S"
+        ],
+        "in": [
+          "0x1d1c8642000",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbab1ee0",
+          "S"
+        ],
+        "in": [
+          "0x1d1c8642000",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8642000",
+          "A"
+        ],
+        "in": [
+          "0x1d1c8642780",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8642000",
+          "A"
+        ],
+        "in": [
+          "0x1d1c85fcda0",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8642000",
+          "B"
+        ],
+        "in": [
+          "0x1d1cbad8d10",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8642000",
+          "B"
+        ],
+        "in": [
+          "0x1d1cbad9250",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbad8d10",
+          "R"
+        ],
+        "in": [
+          "0x1d1c8642780",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbad8d10",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb0ec30",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbad9250",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbadb800",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbad9250",
+          "R"
+        ],
+        "in": [
+          "0x1d1c85fcda0",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbad9250",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb4db80",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8642780",
+          "R"
+        ],
+        "in": [
+          "0x1d1c738a930",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c738a930",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbadb800",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c738a930",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb246e0",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c738a930",
+          "R"
+        ],
+        "in": [
+          "0x1d1c83ee540",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c738a930",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb27320",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbadb800",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb0d700",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbadb800",
+          "R"
+        ],
+        "in": [
+          "0x1d1c83ee540",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbadb800",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb27320",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbadb800",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb27710",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbadb800",
+          "R"
+        ],
+        "in": [
+          "0x1d1c8641b80",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c85fcda0",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbab1160",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb0ec30",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbab1160",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbab1160",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb26480",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb246e0",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb0d700",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb0d700",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb27710",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb0d700",
+          "R"
+        ],
+        "in": [
+          "0x1d1c8641b80",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c83ee540",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb27710",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c83ee540",
+          "R"
+        ],
+        "in": [
+          "0x1d1c8641b80",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c83ee540",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb25340",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb27320",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb26480",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb27710",
+          "R"
+        ],
+        "in": [
+          "0x1d1c86426f0",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c8641b80",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb0e120",
+          "X"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb25340",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb0e120",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb4db80",
+          "R"
+        ],
+        "in": [
+          "0x1d1cbb0e120",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb0e120",
+          "R"
+        ],
+        "in": [
+          "0x1d1c86426f0",
+          "Z"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb26480",
+          "R"
+        ],
+        "in": [
+          "0x1d1c86426f0",
+          "Y"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c86426f0",
+          "P"
+        ],
+        "in": [
+          "0x1d1cbb25e50",
+          "P"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1c86426f0",
+          "P"
+        ],
+        "in": [
+          "0x1d1cbb25c40",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb25e50",
+          "G"
+        ],
+        "in": [
+          "0x1d1c85fd280",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb25e50",
+          "G"
+        ],
+        "in": [
+          "0x1d1cbb25c40",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x1d1cbb25c40",
+          "D"
+        ],
+        "in": [
+          "0x1d1c783de20",
+          "G"
+        ]
+      }
+    ]
+  }
+}

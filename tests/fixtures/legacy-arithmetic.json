@@ -1,0 +1,253 @@
+{
+  "format": "NoodleS",
+  "schema_version": 1,
+  "session": {
+    "graph": {
+      "layout_direction": 0,
+      "acyclic": true,
+      "pipe_collision": false,
+      "pipe_slicing": true,
+      "pipe_style": 1,
+      "accept_connection_types": "{}",
+      "reject_connection_types": "{}"
+    },
+    "nodes": {
+      "0x190f3231910": {
+        "type_": "NoodleS.Inputs.SliderNode",
+        "icon": null,
+        "name": "Slider",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 327.0,
+        "height": 100.55,
+        "pos": [
+          -600.0,
+          -100.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "value": 25.0
+        }
+      },
+      "0x190f3232210": {
+        "type_": "NoodleS.Inputs.NumberNode",
+        "icon": null,
+        "name": "Number",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 361.0,
+        "height": 78.5,
+        "pos": [
+          -600.0,
+          120.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "value": 10.0
+        }
+      },
+      "0x190f3232cf0": {
+        "type_": "NoodleS.Math.AdditionNode",
+        "icon": null,
+        "name": "Addition",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 160,
+        "height": 72.2,
+        "pos": [
+          -120.0,
+          -50.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {}
+      },
+      "0x190f3233ec0": {
+        "type_": "NoodleS.Math.MultiplicationNode",
+        "icon": null,
+        "name": "Multiplication",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": false,
+        "visible": true,
+        "width": 213.0,
+        "height": 72.2,
+        "pos": [
+          160.0,
+          -50.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {}
+      },
+      "0x190f3254d40": {
+        "type_": "NoodleS.Data.WatchNode",
+        "icon": null,
+        "name": "Watch",
+        "color": [
+          13,
+          18,
+          23,
+          255
+        ],
+        "border_color": [
+          74,
+          84,
+          85,
+          255
+        ],
+        "text_color": [
+          255,
+          255,
+          255,
+          180
+        ],
+        "disabled": false,
+        "selected": true,
+        "visible": true,
+        "width": 339.0,
+        "height": 66.95,
+        "pos": [
+          520.0,
+          -50.0
+        ],
+        "layout_direction": 0,
+        "port_deletion_allowed": false,
+        "subgraph_session": {},
+        "custom": {
+          "display": "350"
+        }
+      }
+    },
+    "connections": [
+      {
+        "out": [
+          "0x190f3231910",
+          "Number"
+        ],
+        "in": [
+          "0x190f3232cf0",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x190f3232210",
+          "Number"
+        ],
+        "in": [
+          "0x190f3232cf0",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x190f3232210",
+          "Number"
+        ],
+        "in": [
+          "0x190f3233ec0",
+          "B"
+        ]
+      },
+      {
+        "out": [
+          "0x190f3232cf0",
+          "Number"
+        ],
+        "in": [
+          "0x190f3233ec0",
+          "A"
+        ]
+      },
+      {
+        "out": [
+          "0x190f3233ec0",
+          "Number"
+        ],
+        "in": [
+          "0x190f3254d40",
+          "Value"
+        ]
+      }
+    ]
+  }
+}
