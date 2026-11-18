@@ -1,6 +1,6 @@
 # NoodleS
 
-<img src="noodles/noodles-icon-taskbar.svg" alt="NoodleS logo, a mint-green loft with an amber S-shaped edge" width="208">
+![NoodleS logo, a mint-green loft with an amber S-shaped edge](noodles/noodles-icon-taskbar.svg)
 
 NoodleS is a Windows visual scripting editor for parametric design with Serpentine3D. Build a graph in NoodleS and see the resulting CAD geometry in the Serpentine3D viewport. The editor uses NodeGraphQt and PySide6. NoodleSBridge runs inside Serpentine3D and uses its OpenCascade kernel.
 
@@ -24,7 +24,7 @@ Use **Library** or right-click the canvas and choose **Search Nodes…** to add 
 
 ### Radiolaria
 
-<img src="examples/radiolaria/Radiolaria.png" alt="A perforated Radiolaria shell with a rounded tip and a scalloped rim" width="420">
+[![A perforated Radiolaria shell in Serpentine3D beside its NoodleS graph](examples/radiolaria/Overview.png)](examples/radiolaria/Overview.png)
 
 This example maps a periodic Voronoi pattern onto a curved shell and thickens it into a single solid. The graph exposes controls for the mouth radius, pore count, pattern seed, opening size, and wall thickness.
 
@@ -34,7 +34,7 @@ With NoodleSBridge installed, open the [Serpentine3D model](examples/radiolaria/
 
 ### Gyroid
 
-<img src="examples/gyroid/Gyroid%20CAD%20Solid.png" alt="A thickened gyroid with smooth walls and open channels" width="420">
+[![A thickened gyroid with open channels in Serpentine3D beside its NoodleS graph](examples/gyroid/Overview.png)](examples/gyroid/Overview.png)
 
 This graph builds a cell of a gyroid from sampled points. **Surface from Points** creates the CAD patches, **Brep Join** stitches them together, and **Offset** gives the gyroid solid walls. Use **Cell Size**, **Twist**, and **Wall Thickness** to edit the result. The default wall thickness is 1.2 mm.
 
@@ -44,7 +44,7 @@ Open the [Serpentine3D model](examples/gyroid/Gyroid%20CAD%20Solid.serp), then t
 
 ### Schizophyllum commune
 
-<img src="examples/schizophyllum/Schizophyllum.png" alt="A fan-shaped mushroom with split gills flowing into a rounded base" width="420">
+[![A fan-shaped mushroom with split gills in Serpentine3D beside its NoodleS graph](examples/schizophyllum/Overview.png)](examples/schizophyllum/Overview.png)
 
 This study models the fan and split gills of *Schizophyllum commune* with parametric surfaces. Adjust **Cap Radius**, **Fan Spread**, **Gill Count**, and **Gill Relief** to change the proportions and folds.
 
@@ -54,7 +54,7 @@ Open the [Serpentine3D model](examples/schizophyllum/Schizophyllum.serp), then t
 
 ### Penrose Relief
 
-<img src="examples/penrose-relief/Penrose%20Relief.png" alt="A Penrose tile relief with green kites and amber darts on a narrow graphite plinth" width="420">
+[![A green and amber Penrose tile relief in Serpentine3D beside its NoodleS graph](examples/penrose-relief/Overview.png)](examples/penrose-relief/Overview.png)
 
 The graph clips a **Penrose P2** tiling to a rectangle, shrinks each tile about its centre, and extrudes the tiles to heights along a wave. **Generations**, **Wave Height**, and **Tile Scale** control the pattern density, relief, and gaps.
 
@@ -64,7 +64,7 @@ Open the [Serpentine3D model](examples/penrose-relief/Penrose%20Relief.serp), th
 
 ### Honeycomb
 
-<img src="examples/honeycomb/Honeycomb.png" alt="A cut block of golden wax with hexagonal cells and exposed rhombic cell bases" width="420">
+[![A block of golden honeycomb in Serpentine3D beside its NoodleS graph](examples/honeycomb/Overview.png)](examples/honeycomb/Overview.png)
 
 **Hexagon Tiling** lays out the cell centers. The graph cuts staggered cavities into both sides of a wax block, leaving shared walls and three rhombic faces at each cell base. **Cell Size**, **Wall Thickness**, and **Comb Depth** control the geometry.
 
