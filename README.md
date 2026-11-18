@@ -2,7 +2,7 @@
 
 ![NoodleS logo, a mint-green loft with an amber S-shaped edge](noodles/noodles-icon-taskbar.svg)
 
-NoodleS is a Windows visual scripting editor for parametric design with Serpentine3D. Build a graph in NoodleS and see the resulting CAD geometry in the Serpentine3D viewport. The editor uses NodeGraphQt and PySide6. NoodleSBridge runs inside Serpentine3D and uses its OpenCascade kernel.
+NoodleS is a visual scripting editor for Windows that connects to Serpentine3D for parametric design. Build a graph in NoodleS and see the resulting CAD geometry in the Serpentine3D viewport. The editor uses NodeGraphQt and PySide6. NoodleSBridge runs inside Serpentine3D and uses its OpenCascade kernel.
 
 ## Get started on Windows
 
